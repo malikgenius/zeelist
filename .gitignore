@@ -15,6 +15,10 @@
 # semantic
 /semantic
 
+# public
+
+/public/assets
+
 # misc
 .DS_Store
 .env.local
