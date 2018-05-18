@@ -1,0 +1,35 @@
+import moment from 'moment';
+const initialstate = {
+    text: '',
+    sortBy: 'name',
+    startDate: moment().startOf('day'),
+    endDate: moment().endOf('month'),
+};
+
+export default ( state = initialstate, action ) => {
+    console.log(action.text, action.department);
+    switch (action.type) {
+        case 'SET_TEXT_FILTER':
+        return {
+            ...state,
+            text: action.text
+        };
+        case 'SORT_BY':
+        return {
+            ...state,
+            sortBy: action.payload
+        };
+        case 'SET_START_DATE':
+        return {
+            ...state,
+            startDate: action.startDate
+        };
+        case 'SET_END_DATE':
+        return {
+            ...state,
+            endDate: action.endDate
+        };
+        default:
+            return state;
+    }
+};

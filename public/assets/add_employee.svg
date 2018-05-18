@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:svg="http://www.w3.org/2000/svg" id="svg2" xml:space="preserve" overflow="visible" viewBox="0 0 18121.891 17875.275" version="1.0" enable-background="new 0 0 18121.891 17875.275">
+<g id="g96" transform="matrix(196.77 0 0 206.57 -1.7517e6 -1.7885e6)">
+			<radialGradient id="XMLID_84_" gradientUnits="userSpaceOnUse" cy="8685.1" cx="8950.1" gradientTransform="matrix(1,8e-4,-8e-4,1,7.1357,-7.2051)" r="35.935">
+			<stop id="stop99" stop-color="#fff" offset="0"/>
+			<stop id="stop101" offset="1"/>
+		</radialGradient>
+		<circle id="circle103" cy="8679" cx="8942.9" r="17.236" fill="url(#XMLID_84_)"/>
+			<linearGradient id="XMLID_85_" x1="8978.7" gradientUnits="userSpaceOnUse" x2="8908" gradientTransform="matrix(1,8e-4,-8e-4,1,7.1357,-7.2051)" y1="8760.9" y2="8706.1">
+			<stop id="stop106" stop-color="#fff" offset="0"/>
+			<stop id="stop108" offset="1"/>
+		</linearGradient>
+		<path id="path110" d="m8943.2 8697.2c-15.5 0-28.4 22.8-30.7 52.6l61.2 0.1c-2.2-29.8-15-52.7-30.5-52.7z" fill="url(#XMLID_85_)"/>
+		<g id="g112">
+			<g id="g116">
+				<path id="path118" d="m8984.1 8708h-12.1v-12.2c0-1.1-0.9-2-2-2h-8.7c-1.1 0-2 0.9-2 2v12.2h-12.2c-1 0-1.9 0.9-1.9 2v8.6c0 1.1 0.9 2 1.9 2h12.2v12.2c0 1.1 0.9 2 2 2h8.7c1.1 0 2-0.9 2-2v-12.2h12.1c1.1 0 2-0.9 2-2v-8.6c0-1.1-0.9-2-2-2z" fill="#c6c7c8"/>
+				<path id="path120" stroke="#c6c7c8" stroke-width=".8408" fill="none" d="m8984.1 8708h-12.1v-12.2c0-1.1-0.9-2-2-2h-8.7c-1.1 0-2 0.9-2 2v12.2h-12.2c-1 0-1.9 0.9-1.9 2v8.6c0 1.1 0.9 2 1.9 2h12.2v12.2c0 1.1 0.9 2 2 2h8.7c1.1 0 2-0.9 2-2v-12.2h12.1c1.1 0 2-0.9 2-2v-8.6c0-1.1-0.9-2-2-2z"/>
+			</g>
+		</g>
+	</g>
+<g id="OUTLAND" display="none" transform="translate(44.606 -3424.8)">
+	<path id="path1431" d="m18122 0v17875h-18122v-17875h18122zm-9482 9235.3h841.9v-595.3h-841.9v595.3z" fill="#9e9994" display="inline"/>
+</g>
+<metadata><rdf:RDF><cc:Work><dc:format>image/svg+xml</dc:format><dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/><cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/"/><dc:publisher><cc:Agent rdf:about="http://openclipart.org/"><dc:title>Openclipart</dc:title></cc:Agent></dc:publisher><dc:title>Users</dc:title><dc:date>2007-11-16T10:54:09</dc:date><dc:description>clip art, clipart, image, job, job, media, people, people, png, profession, profession, public domain, svg, user, user, work, work, </dc:description><dc:source>http://openclipart.org/detail/11058/users-by-sampler-11058</dc:source><dc:creator><cc:Agent><dc:title>sampler</dc:title></cc:Agent></dc:creator><dc:subject><rdf:Bag><rdf:li>clip art</rdf:li><rdf:li>clipart</rdf:li><rdf:li>image</rdf:li><rdf:li>job</rdf:li><rdf:li>media</rdf:li><rdf:li>people</rdf:li><rdf:li>png</rdf:li><rdf:li>profession</rdf:li><rdf:li>public domain</rdf:li><rdf:li>svg</rdf:li><rdf:li>user</rdf:li><rdf:li>work</rdf:li></rdf:Bag></dc:subject></cc:Work><cc:License rdf:about="http://creativecommons.org/licenses/publicdomain/"><cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/><cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/><cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/></cc:License></rdf:RDF></metadata></svg>

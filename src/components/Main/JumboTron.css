@@ -1,0 +1,19 @@
+.jumbotron {
+    padding: 4rem 2rem;
+    /* margin-bottom: 2rem; */
+    /* background-color: #e9ecef; */
+    background-color: none;
+    border-radius: .3rem;
+    
+}
+
+.h2.bd {
+    line-height: 100.00000003px;
+    font-size: 70px;
+    text-transform: uppercase;
+    color: #db4949;
+    margin-top: 0;
+    font-weight: 700;
+    font-family: Nunito,Arial,'Arial Unicode MS',Helvetica,sans-serif;
+    text-align: right;
+}

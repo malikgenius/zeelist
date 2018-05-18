@@ -1,0 +1,50 @@
+[
+	{
+		"id": 1,
+		"name": "Malik Mazhar Ali",
+		"email": "malik@zeenah.com",
+		"phone": "95041135",
+		"gender": "male",
+		"ext": "102",
+		"designation": "IT Administrator",
+		"hod": "HOD",
+		"department": "TBWAZEENAH",
+		"image": "/assets/Malik Mazhar Ali_1.jpg"
+	},
+	{
+		"id": 2,
+		"name": "Afroz Ahmad",
+		"email": "afroz@zeenah.com",
+		"phone": "98087771",
+		"gender": "male",
+		"ext": "103",
+		"designation": "Finance Director",
+		"hod": "HOD",
+		"department": "ZEENAHGROUP",
+		"image": "/assets/Afroz Ahmad_1.jpg"
+	},
+	{
+		"id": 3,
+		"name": "Claudia Nair",
+		"email": "claudia@zeenah.com",
+		"phone": "98087771",
+		"gender": "female",
+		"ext": "101",
+		"designation": "Office Manager",
+		"hod": "no",
+		"department": "ZEENAHGROUP",
+		"image": "/assets/Claudia Nair_1.jpg"
+	},
+	{
+		"id": 4,
+		"name": "Pooja Verma",
+		"email": "pooja@zeenah.com",
+		"phone": "98087771",
+		"gender": "female",
+		"ext": "141",
+		"designation": "HOD",
+		"hod": "HOD",
+		"department": "ZEENAHMEDIA",
+		"image": "https://robohash.org/4"
+	}
+]

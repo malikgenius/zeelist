@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:svg="http://www.w3.org/2000/svg" id="svg4198" viewBox="0 0 48 48">
+  <defs id="defs4200">
+    <radialGradient id="radialGradient5031" xlink:href="#linearGradient5060" gradientUnits="userSpaceOnUse" cy="486.65" cx="605.71" gradientTransform="matrix(-2.7744 0 0 1.9697 112.76 -872.89)" r="117.14"/>
+    <linearGradient id="linearGradient5060">
+      <stop id="stop5062" offset="0"/>
+      <stop id="stop5064" stop-opacity="0" offset="1"/>
+    </linearGradient>
+    <radialGradient id="radialGradient5029" xlink:href="#linearGradient5060" gradientUnits="userSpaceOnUse" cy="486.65" cx="605.71" gradientTransform="matrix(2.7744 0 0 1.9697 -1891.6 -872.89)" r="117.14"/>
+    <linearGradient id="linearGradient5027" x1="302.86" gradientUnits="userSpaceOnUse" y1="366.65" gradientTransform="matrix(2.7744 0 0 1.9697 -1892.2 -872.89)" x2="302.86" y2="609.51">
+      <stop id="stop5050" stop-opacity="0" offset="0"/>
+      <stop id="stop5056" offset=".5"/>
+      <stop id="stop5052" stop-opacity="0" offset="1"/>
+    </linearGradient>
+    <linearGradient id="linearGradient2240" x1="20.794" gradientUnits="userSpaceOnUse" y1="18.379" gradientTransform="matrix(1.3427 0 0 1.2354 -8.2196 -6.5772)" x2="35.596" y2="39.6">
+      <stop id="stop15220" stop-color="#f8f8f7" offset="0"/>
+      <stop id="stop2269" stop-color="#e8e8e8" offset=".59929"/>
+      <stop id="stop15222" stop-color="#e2e2de" offset="1"/>
+    </linearGradient>
+    <linearGradient id="linearGradient5163" x1="10.73" gradientUnits="userSpaceOnUse" y1="26.422" gradientTransform="matrix(1.188 0 0 1.188 6.6487 4.1749)" x2="2.3941" y2="26.422">
+      <stop id="stop5159" stop-color="#555753" offset="0"/>
+      <stop id="stop5161" stop-color="#555753" stop-opacity="0" offset="1"/>
+    </linearGradient>
+  </defs>
+  <g id="layer1">
+    <g id="g5022" transform="matrix(.023306 0 0 .012271 44.479 44.417)">
+      <rect id="rect4173" opacity=".40206" style="color:black" height="478.36" width="1339.6" y="-150.7" x="-1559.3" fill="url(#linearGradient5027)"/>
+      <path id="path5058" opacity=".40206" style="color:black" fill="url(#radialGradient5029)" d="m-219.62-150.68v478.33c142.88 0.9 345.4-107.17 345.4-239.2 0-132.02-159.44-239.13-345.4-239.13z"/>
+      <path id="path5018" opacity=".40206" style="color:black" fill="url(#radialGradient5031)" d="m-1559.3-150.68v478.33c-142.8 0.9-345.4-107.17-345.4-239.2 0-132.02 159.5-239.13 345.4-239.13z"/>
+    </g>
+    <rect id="rect4238" fill-rule="evenodd" rx=".56651" ry=".56651" height="45.003" width="38.997" stroke="#888a85" y="1.4969" x="4.5016" fill="url(#linearGradient2240)"/>
+    <rect id="rect4248" style="color:#000000" fill-rule="evenodd" height="2" width="12" y="6" x="26" fill="#999"/>
+    <rect id="rect4250" style="color:#000000" fill-rule="evenodd" height="2" width="11.111" y="10" x="26" fill="#999"/>
+    <rect id="rect4252" style="color:#000000" fill-rule="evenodd" height="2" width="10.21" y="14" x="26" fill="#999"/>
+    <rect id="rect4254" style="color:#000000" fill-rule="evenodd" height="2" width="12" y="18" x="26" fill="#999"/>
+    <rect id="rect2245" rx="0" ry="0" height="43.022" width="37.026" stroke="#fff" y="2.4997" x="5.4997" fill="none"/>
+    <path id="path8643" style="color:#000000" fill-rule="evenodd" fill="url(#linearGradient5163)" d="m9 26.744v11.867h13.112v5.848l13.739-11.807-13.741-11.652v5.747l-13.11-0.003z"/>
+  </g>
+  <metadata>
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/"/>
+        <dc:publisher>
+          <cc:Agent rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title>tango format indent more</dc:title>
+        <dc:date>2010-03-22T13:07:40</dc:date>
+        <dc:description>"indent more" icon from &lt;A href="http://tango.freedesktop.org/Tango_Desktop_Project"&gt; Tango Project &lt;/A&gt; &#xD;\n&lt;BR&gt;&lt;BR&gt;&#xD;\nSince version 0.8.90 Tango Project icons are Public Domain: &lt;A href="http://tango.freedesktop.org/Frequently_Asked_Questions#Terms_of_Use.3F"&gt; Tango Project FAQ &lt;/A&gt;</dc:description>
+        <dc:source>http://openclipart.org/detail/33013/tango-format-indent-more-by-warszawianka</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>warszawianka</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>clip art</rdf:li>
+            <rdf:li>clipart</rdf:li>
+            <rdf:li>externalsource</rdf:li>
+            <rdf:li>format</rdf:li>
+            <rdf:li>icon</rdf:li>
+            <rdf:li>indent</rdf:li>
+            <rdf:li>list</rdf:li>
+            <rdf:li>tango</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>
