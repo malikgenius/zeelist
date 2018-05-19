@@ -45,7 +45,7 @@ class NavbarToggle2 extends React.Component {
       <div>
         <Navbar light expand="md">
           <NavbarBrand> 
-            <Link to="/"><CardImg style={{width: 150}} src={"/assets/zeenahlogo.jpg"} /></Link>
+            <Link to="/"><CardImg style={{width: 150}} src={"/assets/zeenahlogo.svg"} /></Link>
           </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
@@ -80,7 +80,7 @@ class NavbarToggle2 extends React.Component {
                     {/* <CardImg style={{width:30}} src={"/assets/birthday.svg"} /> */}
                     <Popup
                       trigger={<Icon name="birthday" color="red" size="large" />}
-                      content='birthday babies'
+                      content='birthdays list'
                     />
                     {/* <Icon name="birthday" color="red" size="large" /> */}
                     

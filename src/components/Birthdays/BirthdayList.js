@@ -3,6 +3,7 @@ import React from 'react';
 import _ from 'lodash';
 import { Container, Row, Col } from 'reactstrap';
 import BirthdayListItems from './BirthdayListItems';
+import DisplayedRecordAlert from './DisplayedRecordAlert';
 
 
 const BirthdayList = ({ birthdays }) => {
@@ -23,7 +24,8 @@ const BirthdayList = ({ birthdays }) => {
           {/* <NavbarToggle /> */}
           {/* <div><DisplayedRecordAlert>{employees.length !== 0? employees.length: <LottieControl />} </DisplayedRecordAlert></div> */}
           {/* <div><DisplayedRecordAlert>{employees.length} </DisplayedRecordAlert></div> */}
-            <Container >
+            <Container className="container" style={{marginTop: 10}}>
+            <div><DisplayedRecordAlert>{birthdays.length} </DisplayedRecordAlert></div>
               <Row style={{border: 1}}  >
                   {Employees}
             </Row>
