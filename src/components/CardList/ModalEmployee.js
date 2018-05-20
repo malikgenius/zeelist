@@ -52,7 +52,7 @@ class EmployeeModal extends React.Component {
           <ModalHeader toggle={this.props.isClose}>{this.props.employee.name}
           {this.props.employee.jd || this.props.employee.dob
              ?  (<CardSubtitle style={{textDecoration: 'none', fontWeight: 300, marginTop: 5}}>
-                   since {moment.unix(this.props.employee.jd).format("MMMM/DD/YYYY")} {' '} 
+                   {/* since {moment.unix(this.props.employee.jd).format("MMMM/DD/YYYY")} {' '}  */}
                    Joined: {moment.unix(this.props.employee.jd).fromNow()} {' '} 
                    {/* parseInt((new Date(this.props.jd).getTime() / 1000).toFixed(0)) */}
                     {/* DOB: {this.props.employee.dob} */}

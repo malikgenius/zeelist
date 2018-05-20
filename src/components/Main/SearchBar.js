@@ -1,6 +1,7 @@
 /* eslint react/prop-types: 0 */
 import React from 'react';
 import {
+  Button,
   InputGroup,
   InputGroupButtonDropdown,
   Input,
@@ -21,7 +22,7 @@ console.log(props)
     this.state = {
       dropdownOpen: false,
       splitButtonOpen: false,
-      // search: ''
+      search: ''
     };
   }
 
@@ -57,12 +58,11 @@ console.log(props)
             // value={this.state.search}
             
           />
+          
           <InputGroupButtonDropdown 
             addonType="append" 
             isOpen={this.state.dropdownOpen} 
             toggle={this.toggleDropDown}
-            
-          
           >
             <DropdownToggle caret>
               
@@ -73,6 +73,7 @@ console.log(props)
                 Name
               </DropdownItem>
               <DropdownItem value="department" onClick={this.props.sortByChange}>Department</DropdownItem>
+              <DropdownItem value="" onClick={this.props.searchchange}>All Employees</DropdownItem>
             </DropdownMenu>
           </InputGroupButtonDropdown>
         </InputGroup>

@@ -17,14 +17,14 @@ import {
   constructor(props) {
     super(props);
     
-console.log(props)
+console.log(props);
     this.toggleDropDown = this.toggleDropDown.bind(this);
     this.toggleSplit = this.toggleSplit.bind(this);
     this.state = {
       dropdownOpen: false,
       splitButtonOpen: false,
-      calendarFocused: null
-      // search: ''
+      calendarFocused: null,
+      // search: props.filters.text
     };
   }
 
@@ -69,7 +69,7 @@ console.log(props)
           <Input 
             placeholder="search employee"
             onChange={this.props.searchchange}
-            // value={this.state.search}
+            // value={this.props.filters.text}
             
           />
           <InputGroupButtonDropdown 

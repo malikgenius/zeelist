@@ -9,7 +9,7 @@ export default (employees, filters) => {
     // const DateofBirth = moment.unix(employee.dob);
     const startDateMatch = filters.startDate ? filters.startDate.isSameOrBefore(DateofBirth, 'day') : true;
     const endDateMatch = filters.endDate ? filters.endDate.isSameOrAfter(DateofBirth, 'day') : true;
-    const textMatch = employee.name.toLowerCase().includes(filters.text.toLowerCase());    
+    const textMatch = employee.name.toLowerCase().includes(filters.birthDayText.toLowerCase());    
         // moment.unix(employee.dob).format("DD/MMMM").toLowerCase().includes(filters.sortByMonth.toLowerCase());          
         //below code will show all the records who has current month in thier date of birth .. 
         // moment.unix(employee.dob).format("DD/MM/YYYY").toLowerCase().includes(moment().format("MM"));

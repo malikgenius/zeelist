@@ -6,7 +6,7 @@ import * as animationData from './happybirthday.json';
 export default class BirthdayAnimation extends React.Component {
 	constructor(props) {
 		super(props);
-		this.state = { isStopped: true, isPaused: false, lottiefile: '' };
+		this.state = { isStopped: false, isPaused: false, lottiefile: '' };
     }
     
 
@@ -18,7 +18,7 @@ export default class BirthdayAnimation extends React.Component {
 
 		const defaultOptions = {
 			loop: true,
-            autoplay: false,
+            autoplay: true,
             // animationDataLocal
 			animationData
 			// rendererSettings: {
@@ -30,8 +30,8 @@ export default class BirthdayAnimation extends React.Component {
 			<div>
 				<Lottie 
 					options={defaultOptions}
-					height={100}
-					width={100}
+					height={50}
+					width={50}
 					isStopped={this.state.isStopped}
 					isPaused={this.state.isPaused}
 				/>

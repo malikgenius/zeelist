@@ -1,5 +1,6 @@
 import moment from 'moment';
 const initialstate = {
+    birthDayText: '',
     text: '',
     sortBy: 'name',
     startDate: moment().startOf('day'),
@@ -14,11 +15,19 @@ export default ( state = initialstate, action ) => {
             ...state,
             text: action.text
         };
+
+        case 'SET_BIRTHDAY_FILTER':
+        return {
+            ...state,
+            birthDayText: action.text
+        };
+
         case 'SORT_BY':
         return {
             ...state,
             sortBy: action.payload
         };
+
         case 'SET_START_DATE':
         return {
             ...state,

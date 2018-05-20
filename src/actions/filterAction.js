@@ -6,6 +6,13 @@ export const setTextFilter = (text) => {
     };
 };
 
+export const setBirthdayTextFilter = (text) => {
+    return {
+        type: 'SET_BIRTHDAY_FILTER',
+        text
+    };
+};
+
 export const sortBy = (payload) => {
     return {
         type: 'SORT_BY',

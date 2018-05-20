@@ -65,4 +65,4 @@ firebase.auth().onAuthStateChanged((user) => {
     });
     }
 });
-registerServiceWorker();
+// registerServiceWorker();

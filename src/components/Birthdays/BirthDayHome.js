@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import SearchBar from './SearchBar';
 import { connect } from 'react-redux';
 import SelectedEmployees from '../../selectors/birthdays';
-import {sortBy, setTextFilter} from '../../actions/filterAction';
+import {sortBy, setBirthdayTextFilter} from '../../actions/filterAction';
 import FooterPage from '../Main/FooterPage';
 import BirthdayList from './BirthdayList';
 
@@ -19,7 +19,7 @@ class BirthDayHome extends Component {
 
     onSearchChange = (event) => {
         const searchfield = event.target.value;
-        this.props.setTextFilter(searchfield);
+        this.props.setBirthdayTextFilter(searchfield);
         // this.setState({ searchfield });
       }
 
@@ -56,4 +56,4 @@ const mapStateToProps = (state) => {
     };
 };
 
-export default connect(mapStateToProps, {setTextFilter, sortBy})(BirthDayHome);
+export default connect(mapStateToProps, {setBirthdayTextFilter, sortBy})(BirthDayHome);
