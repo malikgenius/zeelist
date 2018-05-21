@@ -8,7 +8,6 @@ const initialstate = {
 };
 
 export default ( state = initialstate, action ) => {
-    console.log(action.text, action.department);
     switch (action.type) {
         case 'SET_TEXT_FILTER':
         return {

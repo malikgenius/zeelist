@@ -7,7 +7,6 @@ import DisplayedRecordAlert from './DisplayedRecordAlert';
 
 
 const BirthdayList = ({ birthdays }) => {
-    // console.log(employees);
     // const SortedEmployees = _.sortBy(employees, ['type', 'name']);
     // var SortedEmployees = _.orderBy(employees, ['type','name'], ['desc', 'asc']);
     const Employees = birthdays.map((person) => {

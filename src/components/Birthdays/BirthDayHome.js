@@ -14,7 +14,6 @@ class BirthDayHome extends Component {
         this.state = {
             searchfield: ''
         }
-        console.log(props);
     }
 
     onSearchChange = (event) => {

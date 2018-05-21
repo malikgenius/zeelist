@@ -3,6 +3,8 @@ import moment from 'moment';
 import { Feed, Icon, Image } from 'semantic-ui-react';
 import BirthdayAnimation from './BirthdayAnimation';
 // import './momentUpdateLocale';
+// Firefox may have issue with our date check below syntex and moment docs for string + format 
+// Moment String + Format will work on all browsers moment("12-25-1995", "MM-DD-YYYY");   moment(dob, "MM-DD-YYYY").format("Do MMMM") 
 
 const BirthdayListItems = ({employee}) => {
     let { name, imageURL, dob, id, position, } = employee
@@ -10,7 +12,7 @@ const BirthdayListItems = ({employee}) => {
     let DateofBirth = moment.unix(dob).format(`MM-DD-${year}`);
     // let dateofbirth = parseInt((new Date(DateofBirth).getTime() / 1000).toFixed(0));
     dob = DateofBirth;
-    console.log(dob);
+   
     return (
     <Feed size="large">
         <Feed.Event>
@@ -27,7 +29,7 @@ const BirthdayListItems = ({employee}) => {
             <Feed.Date>
                 {
                     // moment(dob) < moment() ? 
-                     moment(dob).format("Do MMMM") 
+                     moment(dob, "MM-DD-YYYY").format("Do MMMM") 
                     // dob
                 }
                 {/* {birthday} */}
@@ -42,7 +44,7 @@ const BirthdayListItems = ({employee}) => {
             <Feed.Date>
                 {
                     // moment(dob) < moment() ? 
-                     moment(dob).fromNow()
+                     moment(dob, "MM-DD-YYYY").fromNow()
                 }
                 {/* {birthday} */}
             </Feed.Date> 
@@ -50,7 +52,7 @@ const BirthdayListItems = ({employee}) => {
             <Feed.Date>
                 {
                     // moment(dob) < moment() ? 
-                     moment(dob).format("Do MMMM") 
+                     moment(dob, "MM-DD-YYYY").format("Do MMMM") 
                 }
                 {/* {birthday} */}
             </Feed.Date>

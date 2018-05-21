@@ -5,7 +5,7 @@ import _ from 'lodash';
 export default (employees, filters) => {
   return employees.filter((employee) => {
     const year = new Date().getFullYear();
-    let DateofBirth = moment.unix(employee.dob).format(`MM-DD-${year}`);
+    let DateofBirth = moment.unix(employee.dob, "MM-DD-YYYY").format(`MM-DD-${year}`);
     // const DateofBirth = moment.unix(employee.dob);
     const startDateMatch = filters.startDate ? filters.startDate.isSameOrBefore(DateofBirth, 'day') : true;
     const endDateMatch = filters.endDate ? filters.endDate.isSameOrAfter(DateofBirth, 'day') : true;
