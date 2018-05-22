@@ -71,6 +71,7 @@ class NavbarToggle2 extends React.Component {
 
                <NavItem>
                 <NavLink>
+                    
                     <Link to="/birthday">
                     {/* <CardImg style={{width:30}} src={"/assets/birthday.svg"} /> */}
                     <Popup
@@ -118,6 +119,7 @@ class NavbarToggle2 extends React.Component {
                               />
                             
                             {/* <div style={{textDecoration: 'none'}}><CardImg style={{width:20}} src={"/assets/login.svg"} /></div> */}
+                            
                         </Link>
                     }
                 </NavLink>

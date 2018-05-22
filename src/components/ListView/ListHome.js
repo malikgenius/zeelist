@@ -7,18 +7,14 @@ import FooterPage from '../Main/FooterPage';
 
 
 class ListHome extends Component {
-    constructor(props) {
-        super(props);
-    }
-    
+
     render() {
-        
         return(
             <div>
                 <ListView  employees={this.props.employees}/>
                 <FooterPage />
             </div>
-        )
+        );
     }
 }
 

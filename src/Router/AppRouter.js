@@ -12,6 +12,7 @@ import EditEmployee from '../components/EmployeesForm/EditEmployee';
 import DeleteEmployee from '../components/EmployeesForm/DeleteEmployee';
 import BirthDayHome from '../components/Birthdays/BirthDayHome';
 import PrivateRoute from './PrivateRoute';
+import PublicRoute from './PublicRoute';
 // import AddEmployeeForm from '../components/EmployeesForm/AddEmployeeForm';
 
 export const history = createHistory();
@@ -27,7 +28,7 @@ class AppRouter extends Component {
           <div >
             <NavbarToggle2 />
             <Switch>
-              <Route  path="/login" component={LoginPage} />
+              <PublicRoute  path="/login" component={LoginPage} />
               <Route exact path="/" component={HomePage} />
               <Route  path="/listview" component={ListHome} />
               <Route path="/birthday" component={BirthDayHome} />
