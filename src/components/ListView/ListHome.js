@@ -9,7 +9,6 @@ import FooterPage from '../Main/FooterPage';
 class ListHome extends Component {
     constructor(props) {
         super(props);
-        console.log(props);
     }
     
     render() {

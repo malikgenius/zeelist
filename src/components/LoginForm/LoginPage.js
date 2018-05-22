@@ -10,14 +10,12 @@ import LoginForm from './LoginForm';
 export class LoginPage extends Component {
     constructor(props) {
         super(props);
-        console.log(props);
         this.state = {
             values: {}
         };
     }
     
     Submit = (values) => {
-        console.log(values);
         this.props.startLogin(values);
         this.props.history.push('/');
     }

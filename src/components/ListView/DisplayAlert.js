@@ -4,7 +4,6 @@ import { Badge } from 'reactstrap';
 
 
 const DisplayAlert = (employees) => {
-    console.log(employees)
   return (              
       <Alert color="light" >
          <h3>

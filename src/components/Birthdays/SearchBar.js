@@ -20,7 +20,7 @@ import {
   constructor(props) {
     super(props);
     
-console.log(props);
+
     this.toggleDropDown = this.toggleDropDown.bind(this);
     this.toggleSplit = this.toggleSplit.bind(this);
     this.state = {

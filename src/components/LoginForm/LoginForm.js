@@ -11,7 +11,6 @@ import {connect} from 'react-redux';
  class LoginForm extends React.Component {
 
   renderInputField = (field) => {
-    // console.log(field);
     return (
         <div>
           <legend>{field.myLabel}</legend>
@@ -99,9 +98,9 @@ import {connect} from 'react-redux';
   }
 }
 
-const validate = (values) => {
-  console.log(values);
-};
+// const validate = (values) => {
+//   console.log(values);
+// };
 
 export default reduxForm({
   validate,

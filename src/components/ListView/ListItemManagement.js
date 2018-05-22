@@ -3,8 +3,6 @@ import { Row, Col, Alert } from 'reactstrap';
 
  const ListItems = (props) => {
    
-  
-    console.log(props);
     return (
       <div>
       <Alert color="light">
