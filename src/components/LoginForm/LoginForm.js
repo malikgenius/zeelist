@@ -98,9 +98,9 @@ import {connect} from 'react-redux';
   }
 }
 
-// const validate = (values) => {
-//   console.log(values);
-// };
+const validate = (values) => {
+  // console.log(values);
+};
 
 export default reduxForm({
   validate,
