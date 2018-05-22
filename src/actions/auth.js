@@ -1,4 +1,6 @@
+// eslint-disable-next-line
 import { firebase, googleAuthProvider } from '../firebase/firebase';
+// eslint-disable-next-line
 import {history} from '../Router/AppRouter';
 
 export const login = (uid) => ({

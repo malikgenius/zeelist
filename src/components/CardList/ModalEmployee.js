@@ -1,8 +1,8 @@
 /* eslint react/no-multi-comp: 0, react/prop-types: 0 */
 import React from 'react';
 import { Button, Modal, ModalHeader, ModalBody, 
-        ModalFooter, CardImg, CardText, CardBody,
-        CardTitle, CardSubtitle, Media } 
+        ModalFooter,  CardText,
+        CardSubtitle, Media } 
 from 'reactstrap';
 import { Popup } from 'semantic-ui-react';
 import { Icon } from 'semantic-ui-react';
@@ -14,7 +14,6 @@ import moment from 'moment';
 class EmployeeModal extends React.Component {
   
   constructor(props) {
-    console.log(props)
     super(props);
     this.state = {
       modal: false,

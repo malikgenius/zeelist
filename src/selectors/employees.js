@@ -1,4 +1,5 @@
 import moment from 'moment';
+// eslint-disable-next-line
 import _ from 'lodash';
 // Get visible expenses
 // export default (employees, { text, sortBy, startDate, endDate }) => {
@@ -21,6 +22,7 @@ export default (employees, filters) => {
     return textMatch;
     // eslint-disable-next-line
     // const SortedEmployees = _.orderBy(employees, ['type','department'], ['desc', 'asc']);
+    // eslint-disable-next-line
   }).sort((a, b) => {
     if (filters.sortBy === 'department') {
     return a.department < b.department ? -1 : 1;

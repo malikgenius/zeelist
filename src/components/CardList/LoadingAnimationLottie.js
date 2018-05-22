@@ -1,6 +1,5 @@
 import React from 'react';
 import Lottie from 'react-lottie';
-import { firebase }  from '../../firebase/firebase';
 // import js-file-download from 'js-file-download';
 import * as animationData from './zeenahloading.json';
 // import * as animationDataLocal from './zeenahlogo.json';

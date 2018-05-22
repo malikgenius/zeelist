@@ -5,7 +5,7 @@ import { Card, CardImg, CardText, CardBody,
 import { Icon } from 'semantic-ui-react';
 // import ToggleButton from './ToggleButton';
 import ModalEmployee from './ModalEmployee';
-import { CopyToClipboard } from 'react-copy-to-clipboard';
+// import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 class PeopleCard extends Component {
 
@@ -27,7 +27,6 @@ class PeopleCard extends Component {
 
   render() {
   
-    console.log(this.state.showModal);
     let cardImage = null;
     if (this.props.employee.imageURL) {
     cardImage = ( <CardImg top width="100%" src={`${this.props.employee.imageURL}`} alt="Card image cap" />)

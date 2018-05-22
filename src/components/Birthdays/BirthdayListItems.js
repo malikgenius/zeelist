@@ -1,12 +1,13 @@
 import React from 'react';
 import moment from 'moment';
-import { Feed, Icon, Image } from 'semantic-ui-react';
+import { Feed, Image } from 'semantic-ui-react';
 import BirthdayAnimation from './BirthdayAnimation';
 // import './momentUpdateLocale';
 // Firefox may have issue with our date check below syntex and moment docs for string + format 
 // Moment String + Format will work on all browsers moment("12-25-1995", "MM-DD-YYYY");   moment(dob, "MM-DD-YYYY").format("Do MMMM") 
 
 const BirthdayListItems = ({employee}) => {
+    // eslint-disable-next-line
     let { name, imageURL, dob, id, position, } = employee
     const year = new Date().getFullYear();
     let DateofBirth = moment.unix(dob).format(`MM-DD-${year}`);

@@ -1,6 +1,5 @@
 /* eslint react/prop-types: 0 */
 import React, { Component } from 'react';
-import _ from 'lodash';
 import SearchBar from './SearchBar';
 import CardList from '../CardList/CardList';
 import { connect } from 'react-redux';
@@ -23,7 +22,7 @@ class HomePage extends Component {
         searchfield: '',
         button: false
       };
-      console.log(props)
+      // console.log(props)
     }
 
     onSearchChange = (event) => {

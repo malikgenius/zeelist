@@ -3,18 +3,12 @@ import React from 'react';
 import { Container } from 'reactstrap';
 import Form from 'muicss/lib/react/form';
 import Input from 'muicss/lib/react/input';
-import Textarea from 'muicss/lib/react/textarea';
 import Button from 'muicss/lib/react/button';
 import { Field, reduxForm, initialize } from 'redux-form';
 import {connect} from 'react-redux';
 // import {startUserLogin} from '../../actions/auth';
 
  class LoginForm extends React.Component {
-   constructor(props) {
-     super(props)
-   }
-
-
 
   renderInputField = (field) => {
     // console.log(field);

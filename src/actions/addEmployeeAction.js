@@ -24,7 +24,9 @@ export const startAddEmployee = (values = {}) => {
         position = '',
         dob = '',
     } = values;
+    // eslint-disable-next-line
     let dateofbirth = parseInt((new Date(dob).getTime() / 1000).toFixed(0));
+    // eslint-disable-next-line
     let dateofjoining = parseInt((new Date(jd).getTime() / 1000).toFixed(0));
      dob = dateofbirth;
      jd = dateofjoining;
@@ -106,9 +108,13 @@ export const  EditEmployee = (id, employee) => ({
     id,
     employee
 });
+// eslint-disable-next-line
 export const startEditEmployee = (id, values) => {
+    // eslint-disable-next-line
     let {name, email, phone, extension, country, gender, hod, imageURL, info, jd , position, dob} = values;
+    // eslint-disable-next-line
     let dateofbirth = parseInt((new Date(dob).getTime() / 1000).toFixed(0));
+    // eslint-disable-next-line
     let dateofjoining = parseInt((new Date(jd).getTime() / 1000).toFixed(0));
      dob = dateofbirth;
      jd = dateofjoining;

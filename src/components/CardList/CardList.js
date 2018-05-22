@@ -1,10 +1,8 @@
 /* eslint react/prop-types: 0 */
 import React from 'react';
-import _ from 'lodash';
 import { Container, Row, Col } from 'reactstrap';
 import PeopleCard from './PeopleCard';
 import DisplayedRecordAlert from './DisplayedRecordAlert';
-import NavbarToggle from '../Main/NavbarToggle';
 // import LottieControl from './react-lottie';
 // import PopOver from '../PopOver';
 // import CarouselMain from './Carousel1';
@@ -16,6 +14,7 @@ const CardList = ({ employees }) => {
     // console.log(employees);
     // const SortedEmployees = _.sortBy(employees, ['type', 'name']);
     // var SortedEmployees = _.orderBy(employees, ['type','name'], ['desc', 'asc']);
+    // eslint-disable-next-line
     const Employees = employees.map((person) => {
       if(person) {
         return (

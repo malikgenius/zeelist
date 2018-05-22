@@ -4,7 +4,6 @@ import { connect } from 'react-redux';
 import { Icon, Popup } from 'semantic-ui-react';
 import { startLogout } from '../../actions/auth';
 import {
-  Button,
   CardImg,
   Collapse,
   Navbar,
@@ -13,11 +12,7 @@ import {
   Nav,
   NavItem,
   NavLink,
-  Tooltip,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem } from 'reactstrap';
+   } from 'reactstrap';
 
 class NavbarToggle2 extends React.Component {
   constructor(props) {

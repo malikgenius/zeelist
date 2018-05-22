@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { Alert } from 'reactstrap';
 import { startLogin } from '../../actions/auth';
 import LoginForm from './LoginForm';
-import FooterPage from '../Main/FooterPage';
+// import FooterPage from '../Main/FooterPage';
 
 
 export class LoginPage extends Component {

@@ -1,4 +1,5 @@
 import React from 'react';
+// eslint-disable-next-line
 import { Col, Container, Row, Footer, Badge, Alert } from 'mdbreact';
 
 class FooterPage extends React.Component {

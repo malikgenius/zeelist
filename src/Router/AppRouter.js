@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+// eslint-disable-next-line
 import { BrowserRouter, Router, Route, Switch } from 'react-router-dom';
 import createHistory from 'history/createBrowserHistory'
 import NavbarToggle2 from '../components/Main/NavbarToggle2';

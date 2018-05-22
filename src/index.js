@@ -4,10 +4,10 @@ import { Provider } from 'react-redux';
 import 'react-dates/initialize';
 import 'react-dates/lib/css/_datepicker.css';
 import { firebase } from './firebase/firebase';
-import registerServiceWorker from './registerServiceWorker';
+// import registerServiceWorker from './registerServiceWorker';
 import configureStore from './reducers';
 import {startSetEmployees} from './actions/addEmployeeAction';
-import getVisibleEmployees from './selectors/employees';
+// import getVisibleEmployees from './selectors/employees';
 import AppRouter, {history} from './Router/AppRouter';
 import LoadingAnimationLottie from './components/CardList/LoadingAnimationLottie';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -24,11 +24,11 @@ const App = () => {
 }
 
 const store = configureStore();
-store.subscribe(() => {
-    const state = store.getState();
-    const visibleEmployees = getVisibleEmployees(state.employees, state.filters);
-    console.log(visibleEmployees);
-});
+// store.subscribe(() => {
+//     const state = store.getState();
+//     const visibleEmployees = getVisibleEmployees(state.employees, state.filters);
+//     console.log(visibleEmployees);
+// });
 
 let hasRendered = false;
 const renderApp = () => {

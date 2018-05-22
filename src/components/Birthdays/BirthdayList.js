@@ -1,14 +1,13 @@
 /* eslint react/prop-types: 0 */
 import React from 'react';
-import _ from 'lodash';
 import { Container, Row, Col } from 'reactstrap';
 import BirthdayListItems from './BirthdayListItems';
 import DisplayedRecordAlert from './DisplayedRecordAlert';
 
 
 const BirthdayList = ({ birthdays }) => {
-    // const SortedEmployees = _.sortBy(employees, ['type', 'name']);
     // var SortedEmployees = _.orderBy(employees, ['type','name'], ['desc', 'asc']);
+    // eslint-disable-next-line
     const Employees = birthdays.map((person) => {
       if(person) {
         return (
