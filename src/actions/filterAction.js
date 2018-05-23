@@ -1,3 +1,5 @@
+import moment from 'moment';
+
 export const setTextFilter = (text) => {
     console.log(text);
     return {
@@ -21,6 +23,7 @@ export const sortBy = (payload) => {
 };
 
 export const setStartDate = (startDate) => {
+    
     return {
         type: 'SET_START_DATE',
         startDate

@@ -10,11 +10,6 @@ export default (employees, filters) => {
     const startDateMatch = filters.startDate ? filters.startDate.isSameOrBefore(DateofBirth, 'day') : true;
     const endDateMatch = filters.endDate ? filters.endDate.isSameOrAfter(DateofBirth, 'day') : true;
     const textMatch = employee.name.toLowerCase().includes(filters.birthDayText.toLowerCase());    
-        // moment.unix(employee.dob).format("DD/MMMM").toLowerCase().includes(filters.sortByMonth.toLowerCase());          
-        //below code will show all the records who has current month in thier date of birth .. 
-        // moment.unix(employee.dob).format("DD/MM/YYYY").toLowerCase().includes(moment().format("MM"));
-
-
 
     return  startDateMatch & endDateMatch & textMatch;
     // eslint-disable-next-line
@@ -32,13 +27,3 @@ export default (employees, filters) => {
   
 };
 
-
-
-// }).sort((a, b) =>  {
-//   if (sortBy === 'department') {
-//     return a.department < b.department ? 1 : -1;
-//   } else if (sortBy === 'amount') {
-//     return a.amount < b.amount ? 1 : -1;
-//   }
-// });
-// };
