@@ -67,16 +67,20 @@ import moment from 'moment';
 
 
   renderInputField = (field) => {
-    // console.log(field);
     return (
+      <div>
       <FormGroup>
+        
           <Label>{field.myLabel}</Label>
           <Input 
             type="text"
             placeholder={field.myPlaceholder}
             {...field.input}
           />
+          <div className="error">{field.meta.error}</div>
+          
         </FormGroup>
+        </div>
     );
   }
 
@@ -201,7 +205,7 @@ import moment from 'moment';
 
  
    render() {
-     console.log(this.props);
+    
 
     return (
       <Form className="container" style={{ padding: 10}} 
@@ -312,7 +316,11 @@ import moment from 'moment';
 }
 
 const validate = (values) => {
-  console.log(values);
+  // console.log(values);
+  const errors = {};
+  if (!values.name) {
+    errors.name = 'Please enter a first name';
+  }
 };
 
 
