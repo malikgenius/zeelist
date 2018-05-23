@@ -32,9 +32,9 @@ class PeopleCard extends Component {
     cardImage = ( <CardImg top width="100%" src={`${this.props.employee.imageURL}`} alt="Card image cap" />)
     } else {
       if(this.props.employee.gender === 'female') {
-        cardImage = (<CardImg top width="100%" src="/assets/female.svg" alt="Card image cap" />);
+        cardImage = (<CardImg top width="100%" src="/assets/female.jpg" alt="Card image cap" />);
       } else {
-        cardImage = (<CardImg top width="80%" height="80%" src="/assets/Boy02.svg" alt="Card image cap" />)
+        cardImage = (<CardImg top width="80%" height="80%" src="/assets/male.jpg" alt="Card image cap" />)
       }
     }
 

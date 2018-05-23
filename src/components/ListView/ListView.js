@@ -136,10 +136,6 @@ const ListView = ({ employees }) => {
       }
     });
 
-
-    
-   
-
       return (
         // <div > { employees.length !== 0? }
 
