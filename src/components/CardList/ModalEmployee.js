@@ -62,7 +62,12 @@ class EmployeeModal extends React.Component {
           <ModalBody>
             <Media>
               <Media left href="#">
-                <Media object style={{maxWidth: '100px', marginRight: 5}}src={`${this.props.employee.imageURL}`} alt="Generic placeholder image" />
+              { this.props.employee.imageURL ? 
+                  <Media object style={{maxWidth: '100px', marginRight: 5}}src={`${this.props.employee.imageURL}`} alt="Generic placeholder image" />
+                  :
+                  <Media object style={{maxWidth: '100px', marginRight: 5}}src="/assets/male.jpg" alt="Generic placeholder image" />
+              }
+                {/* <Media object style={{maxWidth: '100px', marginRight: 5}}src={`${this.props.employee.imageURL}`} alt="Generic placeholder image" /> */}
               </Media>
               <Media body>
                 <Media heading>
