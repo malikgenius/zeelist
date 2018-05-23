@@ -8,7 +8,7 @@ class EditEmployee extends Component {
     
     onSubmit = (values) => {
         const employee_id = this.props.location.selectedemployee.employeedata.id;
-        this.props.startEditEmployee(employee_id, values)
+        this.props.startEditEmployee(employee_id, values);
         this.props.history.push('/');
         
     }

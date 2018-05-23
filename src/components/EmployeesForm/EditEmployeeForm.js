@@ -27,7 +27,6 @@ import { startAddEmployee } from '../../actions/addEmployeeAction';
       avatar: '',
       formValues: ''
     };
-    console.log(props)
   }  
   componentDidMount = ()  => {
     this.handleInitialize();
@@ -284,7 +283,7 @@ import { startAddEmployee } from '../../actions/addEmployeeAction';
 }
 
 const validate = (values) => {
-  console.log(values);
+  // console.log(values);
 };
 
 
