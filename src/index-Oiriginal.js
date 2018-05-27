@@ -46,18 +46,20 @@ firebase.auth().onAuthStateChanged(user => {
   if (user) {
     // why to dispatch login and logout here because we want our store to be updated when user first visits this page .. check andrew mead aut
     store.dispatch(login(user.uid));
-    store.dispatch(startSetEmployees());
-    renderApp();
-    if (history.location.pathname === "/") {
-      history.push("/");
-    } else {
-      history.push(history.location.pathname);
-    }
+    store.dispatch(startSetEmployees()).then(() => {
+      renderApp();
+      if (history.location.pathname === "/") {
+        history.push("/");
+      } else {
+        history.push(history.location.pathname);
+      }
+    });
   } else {
     store.dispatch(logout());
-    store.dispatch(startSetEmployees());
-    renderApp();
-    history.push("/");
+    store.dispatch(startSetEmployees()).then(() => {
+      renderApp();
+      history.push("/");
+    });
   }
 });
 // registerServiceWorker();

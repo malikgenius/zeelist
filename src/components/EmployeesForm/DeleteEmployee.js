@@ -5,7 +5,6 @@ import { startRemoveEmployee } from "../../actions/addEmployeeAction";
 class DeleteEmployee extends Component {
   constructor(props) {
     super(props);
-    console.log(props);
   }
 
   componentDidMount = () => {
