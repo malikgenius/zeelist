@@ -1,30 +1,28 @@
 // eslint-disable-next-line
-import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
-import thunk from 'redux-thunk';
-import { reducer as formReducer } from 'redux-form';
-import { composeWithDevTools } from 'redux-devtools-extension';
-import employeesReducer from './EmployeeReducer';
-import filtersReducer from './FiltersReducer';
-import auth from './auth';
-
+import { createStore, combineReducers, applyMiddleware, compose } from "redux";
+import thunk from "redux-thunk";
+import { reducer as formReducer } from "redux-form";
+import { composeWithDevTools } from "redux-devtools-extension";
+import employeesReducer from "./EmployeeReducer";
+import filtersReducer from "./FiltersReducer";
+import auth from "./auth";
+import file from "./ExcelList";
 
 export default () => {
-    const store = createStore(combineReducers({
-        employees: employeesReducer,
-        filters: filtersReducer,
-        form: formReducer,
-        auth: auth
-    }), composeWithDevTools(
-        applyMiddleware(thunk)
-    ));
-    return store;
+  const store = createStore(
+    combineReducers({
+      employees: employeesReducer,
+      filters: filtersReducer,
+      form: formReducer,
+      auth: auth,
+      file: file
+    }),
+    composeWithDevTools(applyMiddleware(thunk))
+  );
+  return store;
 };
 
-
-
-
-
-// WORKING WITHOUT THUNK ... 
+// WORKING WITHOUT THUNK ...
 
 // import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
 // import thunk from 'redux-thunk';
@@ -48,4 +46,3 @@ export default () => {
 //     );
 //     return store;
 // };
-

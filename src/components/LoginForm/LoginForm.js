@@ -1,29 +1,27 @@
-import React from 'react';
+import React from "react";
 // import { Button, Form, FormGroup, Label, Input, Container } from 'reactstrap';
-import { Container } from 'reactstrap';
-import Form from 'muicss/lib/react/form';
-import Input from 'muicss/lib/react/input';
-import Button from 'muicss/lib/react/button';
-import { Field, reduxForm, initialize } from 'redux-form';
-import {connect} from 'react-redux';
+import { Container } from "reactstrap";
+import Form from "muicss/lib/react/form";
+import Input from "muicss/lib/react/input";
+import Button from "muicss/lib/react/button";
+import { Field, reduxForm, initialize } from "redux-form";
+import { connect } from "react-redux";
 // import {startUserLogin} from '../../actions/auth';
 
- class LoginForm extends React.Component {
-
-  renderInputField = (field) => {
+class LoginForm extends React.Component {
+  renderInputField = field => {
     return (
-        <div>
-          <legend>{field.myLabel}</legend>
-          <Input 
-            type={field.type}
-            placeholder={field.myPlaceholder}
-            {...field.input}
-          />
-        </div>
+      <div>
+        <legend>{field.myLabel}</legend>
+        <Input
+          type={field.type}
+          placeholder={field.myPlaceholder}
+          {...field.input}
+        />
+      </div>
     );
-  }
+  };
   render() {
-    
     return (
       <div>
         {/* <style>
@@ -71,39 +69,45 @@ import {connect} from 'react-redux';
           }
 
         </style> */}
-      <Container className="container" style={{alignItems: 'center', alignContent: 'center', alignSelf: 'center'}}>
-          <Form  
-            onSubmit={this.props.handleSubmit}
-          >
-          <Field
-            myPlaceholder="jon@zeenah.com"
-            // myLabel="email"
-            name="email"
-            component={this.renderInputField}
-            type="text"
-          />
-          <Field
-            myPlaceholder="password"
-            // myLabel="Password"
-            name="password"
-            component={this.renderInputField}
-            type="password"
-          />
-           
+        <Container
+          className="container"
+          style={{
+            alignItems: "center",
+            alignContent: "center",
+            alignSelf: "center"
+          }}
+        >
+          <Form onSubmit={this.props.handleSubmit}>
+            <Field
+              myPlaceholder="jon@zeenah.com"
+              // myLabel="email"
+              name="email"
+              component={this.renderInputField}
+              type="text"
+            />
+            <Field
+              myPlaceholder="password"
+              // myLabel="Password"
+              name="password"
+              component={this.renderInputField}
+              type="password"
+            />
+
             <Button>Submit</Button>
           </Form>
-      </Container>
+        </Container>
       </div>
     );
   }
 }
 
-const validate = (values) => {
+const validate = values => {
   // console.log(values);
 };
 
 export default reduxForm({
   validate,
-  form: 'auth',
+  form: "auth",
+  fields: ["email", "password"],
   initialize
 })(connect()(LoginForm));
