@@ -10,6 +10,7 @@ import { connect } from "react-redux";
 
 class LoginForm extends React.Component {
   renderInputField = field => {
+    // console.log(field);
     return (
       <div>
         <legend>{field.myLabel}</legend>
@@ -18,57 +19,15 @@ class LoginForm extends React.Component {
           placeholder={field.myPlaceholder}
           {...field.input}
         />
+        <p style={{ color: "red", fontSize: 10 }}>
+          {field.meta.touched && field.meta.error}
+        </p>
       </div>
     );
   };
   render() {
     return (
       <div>
-        {/* <style>
-          {`
-            @media (min-width: '1200px')
-            .container {
-                max-width: '1140px';
-            }
-            @media (min-width: 992px)
-            .container {
-                
-            }
-            @media (min-width: 768px)
-            .container {
-                
-            }
-            @media (min-width: 576px)
-            .container {
-                max-width: 540px;
-            `}
-          {
-            `.form-control {
-              display: block;
-              width: 100%;
-              padding: .375rem .75rem;
-              font-size: 1rem;
-              line-height: 1.5;
-              color: #495057;
-              background-color: #fff;
-              background-clip: padding-box;
-              border: 1px solid #ced4da;
-              border-radius: .25rem;
-              -webkit-transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
-              transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
-              -o-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-              transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-              transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
-          },
-          @media (max-width: 992px)
-            .form-control {
-              width: 50%
-            }
-          
-          `
-          }
-
-        </style> */}
         <Container
           className="container"
           style={{
@@ -102,7 +61,24 @@ class LoginForm extends React.Component {
 }
 
 const validate = values => {
-  // console.log(values);
+  const errors = {};
+
+  // const email = value =>
+  // value && !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(value) ?
+  // 'Invalid email address' : undefined
+
+  if (!values.email) {
+    errors.email = "You must provide Email";
+  } else if (!/^[A-Z0-9._%+-]+@zeenah+\.[A-Z]{2,4}$/i.test(values.email)) {
+    errors.email = "Invalid email address";
+  }
+
+  if (!values.password) {
+    errors.password = "You must provide password to login";
+  } else if (values.password.length < 6) {
+    errors.password = "Too short ";
+  }
+  return errors;
 };
 
 export default reduxForm({

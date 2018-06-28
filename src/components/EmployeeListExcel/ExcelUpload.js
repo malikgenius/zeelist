@@ -6,7 +6,7 @@ import { startAddExcelList, startSetFile } from "../../actions/addExcelList";
 class ExcelUpload extends Component {
   // const employee_id = this.props.location.employee.employeedata.id;
   onSubmit = values => {
-    const employee_id = this.props.isAuthenticated;
+    // const employee_id = this.props.isAuthenticated;
     this.props.startAddExcelList(values);
     // this.props.startSetFile(values);
     this.props.history.push("/");

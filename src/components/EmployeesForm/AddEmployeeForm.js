@@ -16,7 +16,6 @@ import moment from "moment";
 
 class AddEmployeeForm extends React.Component {
   constructor(props) {
-    console.log(props);
     // console.log(props.location.employee.employeedata.name)
     super(props);
     this.state = {
@@ -45,12 +44,12 @@ class AddEmployeeForm extends React.Component {
       imageURL: "",
       email: "",
       phone: "",
-      extension: "",
+      extension: "300",
       gender: "male",
-      position: "",
-      dob: "",
-      jd: "",
-      department: "",
+      position: "Manager",
+      dob: "2018-01-01",
+      jd: "2018-01-01",
+      department: "Administration",
       hod: "no",
       info: "",
       country: "oman"
@@ -74,7 +73,29 @@ class AddEmployeeForm extends React.Component {
             placeholder={field.myPlaceholder}
             {...field.input}
           />
-          <div className="error">{field.meta.error}</div>
+          <p style={{ color: "red", fontSize: 10 }}>
+            {" "}
+            {field.meta.touched && field.meta.error}
+          </p>
+        </FormGroup>
+      </div>
+    );
+  };
+
+  renderInputNumberField = field => {
+    return (
+      <div>
+        <FormGroup>
+          <Label>{field.myLabel}</Label>
+          <Input
+            type="number"
+            placeholder={field.myPlaceholder}
+            {...field.input}
+          />
+          <p style={{ color: "red", fontSize: 10 }}>
+            {" "}
+            {field.meta.touched && field.meta.error}
+          </p>
         </FormGroup>
       </div>
     );
@@ -202,14 +223,14 @@ class AddEmployeeForm extends React.Component {
         </FormGroup>
         <Field
           myPlaceholder="employee name here.."
-          myLabel="name"
+          myLabel="Name"
           name="name"
           component={this.renderInputField}
           type="text"
         />
         <Field
           myPlaceholder="employee email here.."
-          myLabel="email"
+          myLabel="Email"
           name="email"
           component={this.renderInputField}
           type="text"
@@ -218,16 +239,16 @@ class AddEmployeeForm extends React.Component {
           myPlaceholder="employee cell phone here.."
           myLabel="Phone"
           name="phone"
-          component={this.renderInputField}
-          type="text"
+          component={this.renderInputNumberField}
+          type="number"
           // normalize={normalizePhone}
         />
         <Field
           myPlaceholder="employee extension here.."
           myLabel="Extension"
           name="extension"
-          component={this.renderInputField}
-          type="text"
+          component={this.renderInputNumberField}
+          type="number"
         />
         <Field
           myPlaceholder="employee Gender here.."
@@ -235,7 +256,7 @@ class AddEmployeeForm extends React.Component {
           name="gender"
           value="male"
           component={this.renderSelectGenderField}
-          // type="select"
+          type="select"
         >
           <option name="male">Male</option>
           <option name="female">Female</option>
@@ -298,8 +319,37 @@ const validate = values => {
   // console.log(values);
   const errors = {};
   if (!values.name) {
-    errors.name = "Please enter a first name";
+    errors.name = "Please enter Employee name here";
+  } else if (values.name.length < 3) {
+    errors.name = "Too short";
   }
+
+  if (!values.email) {
+    errors.email = "You must provide Email";
+    // it can only be zeenah in the domain ... we can change it if needed in the regex below  with value && !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(value)
+  } else if (!/^[A-Z0-9._%+-]+@zeenah+\.[A-Z]{2,4}$/i.test(values.email)) {
+    errors.email = "Invalid email address, i.e example@zeenah.com";
+  }
+
+  if (!values.phone) {
+    errors.phone = "Please provide Employee`s Mobile number";
+  } else if (values.phone.length < 8 || !/^[0-9]{8,13}$/i.test(values.phone)) {
+    errors.phone = "Phone Number must be of 8 numerics least i.e 95041135";
+  }
+
+  if (!values.extension) {
+    errors.extension = "Please provide Extension number";
+  } else if (
+    values.extension.length < 3 ||
+    !/^[0-9]{3}$/i.test(values.extension)
+  ) {
+    errors.extension = "Extension Number must be of 3 numerics least i.e 102";
+  }
+  // else if (typeof values.phone !== "number") {
+  //   errors.phone = "only numbers are allowed as phone";
+  // }
+
+  return errors;
 };
 
 export default reduxForm({

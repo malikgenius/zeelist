@@ -7,7 +7,7 @@ import { firebase } from "./firebase/firebase";
 // import registerServiceWorker from './registerServiceWorker';
 import configureStore from "./reducers";
 import { startSetEmployees } from "./actions/addEmployeeAction";
-import { startSetFile } from "./actions/addExcelList";
+// import { startSetFile } from "./actions/addExcelList";
 // import getVisibleEmployees from './selectors/employees';
 import AppRouter, { history } from "./Router/AppRouter";
 import LoadingAnimationLottie from "./components/CardList/LoadingAnimationLottie";

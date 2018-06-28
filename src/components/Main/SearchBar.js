@@ -1,5 +1,5 @@
 /* eslint react/prop-types: 0 */
-import React from 'react';
+import React from "react";
 import {
   InputGroup,
   InputGroupButtonDropdown,
@@ -7,20 +7,20 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem
- } from 'reactstrap';
- import './SearchBar.css';
- import {connect} from 'react-redux';
+} from "reactstrap";
+import "./SearchBar.css";
+import { connect } from "react-redux";
 
- class SearchBar extends React.Component {
+class SearchBar extends React.Component {
   constructor(props) {
     super(props);
-    
+
     this.toggleDropDown = this.toggleDropDown.bind(this);
     this.toggleSplit = this.toggleSplit.bind(this);
     this.state = {
       dropdownOpen: false,
       splitButtonOpen: false,
-      search: ''
+      search: ""
     };
   }
 
@@ -44,47 +44,45 @@ import {
   // }
   render() {
     return (
-        <div>
-           
-        
-      <div style={{marginTop: 50}}>
-      
-        <InputGroup>
-          <Input 
-            placeholder="search employee"
-            onChange={this.props.searchchange}
-            // value={this.state.search}
-            
-          />
-          
-          <InputGroupButtonDropdown 
-            addonType="append" 
-            isOpen={this.state.dropdownOpen} 
-            toggle={this.toggleDropDown}
-          >
-            <DropdownToggle caret>
-              
-              SortedBy {this.props.filters.sortBy.charAt(0).toUpperCase() + this.props.filters.sortBy.slice(1)}
-            </DropdownToggle>
-            <DropdownMenu >
-              <DropdownItem value="name" onClick={this.props.sortByChange}>
-                Name
-              </DropdownItem>
-              <DropdownItem value="department" onClick={this.props.sortByChange}>Department</DropdownItem>
-              <DropdownItem value="" onClick={this.props.searchchange}>All Employees</DropdownItem>
-            </DropdownMenu>
-          </InputGroupButtonDropdown>
-        </InputGroup>
-      </div>
+      <div>
+        <div style={{ marginTop: 50 }}>
+          <InputGroup>
+            <Input
+              placeholder="search employee"
+              onChange={this.props.searchchange}
+              // value={this.state.search}
+            />
+
+            <InputGroupButtonDropdown
+              addonType="append"
+              isOpen={this.state.dropdownOpen}
+              toggle={this.toggleDropDown}
+            >
+              <DropdownToggle caret>
+                SortedBy{" "}
+                {this.props.filters.sortBy.charAt(0).toUpperCase() +
+                  this.props.filters.sortBy.slice(1)}
+              </DropdownToggle>
+              <DropdownMenu>
+                <DropdownItem value="name" onClick={this.props.sortByChange}>
+                  Name
+                </DropdownItem>
+                {/* <DropdownItem value="department" onClick={this.props.sortByChange}>Department</DropdownItem> */}
+                <DropdownItem value="" onClick={this.props.searchchange}>
+                  All Employees
+                </DropdownItem>
+              </DropdownMenu>
+            </InputGroupButtonDropdown>
+          </InputGroup>
+        </div>
       </div>
     );
   }
-};
-
+}
 
 const mapStateToProps = state => {
   return {
-  filters: state.filters
+    filters: state.filters
   };
 };
 

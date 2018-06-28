@@ -14,7 +14,7 @@ export class AddEmployee extends Component {
   }
 
   Submit = values => {
-    // console.log(values);
+    console.log(values);
     this.props.startAddEmployee(values);
     this.props.history.push("/");
   };
@@ -27,4 +27,7 @@ const mapDispatchToProps = dispatch => ({
   startAddEmployee: values => dispatch(startAddEmployee(values))
 });
 
-export default connect(null, mapDispatchToProps)(AddEmployee);
+export default connect(
+  null,
+  mapDispatchToProps
+)(AddEmployee);

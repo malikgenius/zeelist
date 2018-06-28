@@ -37,7 +37,6 @@ class NavbarToggle2 extends React.Component {
       this.setState({
         fileURL
       });
-      console.log(this.state.fileURL);
     });
   };
 
@@ -90,7 +89,7 @@ class NavbarToggle2 extends React.Component {
 
               <NavItem>
                 <NavLink>
-                  <a href={this.props.file.fileURL} download target="_blank">
+                  <a href={this.state.fileURL} download target="_blank">
                     <Popup
                       trigger={
                         <Icon name="download" size="large" color="grey" />

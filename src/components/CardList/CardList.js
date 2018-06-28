@@ -12,7 +12,7 @@ import DisplayedRecordAlert from "./DisplayedRecordAlert";
 
 const CardList = ({ employees }) => {
   // console.log(employees);
-  // const SortedEmployees = _.sortBy(employees, ['type', 'name']);
+  // const SortedEmployees = _.sortBy(employees, ["type", "name"]);
   // var SortedEmployees = _.orderBy(employees, ['type','name'], ['desc', 'asc']);
   // eslint-disable-next-line
   const Employees = employees.map(person => {

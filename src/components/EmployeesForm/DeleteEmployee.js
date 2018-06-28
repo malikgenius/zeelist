@@ -3,9 +3,9 @@ import { connect } from "react-redux";
 import { startRemoveEmployee } from "../../actions/addEmployeeAction";
 
 class DeleteEmployee extends Component {
-  constructor(props) {
-    super(props);
-  }
+  // constructor(props) {
+  //   super(props);
+  // }
 
   componentDidMount = () => {
     const employee_id = this.props.location.selectedemployee.employeeid;
@@ -20,4 +20,7 @@ class DeleteEmployee extends Component {
   }
 }
 
-export default connect(null, { startRemoveEmployee })(DeleteEmployee);
+export default connect(
+  null,
+  { startRemoveEmployee }
+)(DeleteEmployee);

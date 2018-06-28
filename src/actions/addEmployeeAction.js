@@ -52,15 +52,19 @@ export const startAddEmployee = (values = {}) => {
     firebase
       .database()
       .ref("/employees")
-      .push(employee)
-      .then(ref => {
-        dispatch(
-          employeeAdd({
-            id: ref.key,
-            ...values
-          })
-        );
-      });
+      .push(employee);
+
+    // if Fetch Employees from firebase is going through .on (real time), please dont dispatch employeeAdd it will duplicate.
+    // single record till you manually refresh the page. as record will be updated from firebase and local redux both.
+
+    // .then(ref => {
+    //   dispatch(
+    //     employeeAdd({
+    //       id: ref.key,
+    //       ...values
+    //     })
+    //   );
+    // });
   };
 };
 
