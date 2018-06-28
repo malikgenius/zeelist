@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { Icon, Popup } from "semantic-ui-react";
 import { startLogout } from "../../actions/auth";
+import { startSetFile } from "../../actions/addExcelList";
 import {
   CardImg,
   Collapse,
@@ -17,7 +18,11 @@ import {
 class NavbarToggle2 extends React.Component {
   constructor(props) {
     super(props);
-    console.log(this.props);
+    this.state = {
+      fileURL: ""
+    };
+
+    // console.log(this.props);
 
     this.toggle = this.toggle.bind(this);
     this.state = {
@@ -25,6 +30,17 @@ class NavbarToggle2 extends React.Component {
       tooltipOpen: false
     };
   }
+
+  componentDidMount = () => {
+    this.props.startSetFile().then(() => {
+      const fileURL = this.props.file.fileURL;
+      this.setState({
+        fileURL
+      });
+      console.log(this.state.fileURL);
+    });
+  };
+
   toggle() {
     this.setState({
       isOpen: !this.state.isOpen
@@ -174,7 +190,8 @@ class NavbarToggle2 extends React.Component {
 }
 
 const mapDispatchToProps = dispatch => ({
-  startLogout: () => dispatch(startLogout())
+  startLogout: () => dispatch(startLogout()),
+  startSetFile: () => dispatch(startSetFile())
 });
 
 const mapStateToProps = state => ({

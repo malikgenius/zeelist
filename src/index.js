@@ -48,7 +48,7 @@ firebase.auth().onAuthStateChanged(user => {
     // why to dispatch login and logout here because we want our store to be updated when user first visits this page .. check andrew mead aut
     store.dispatch(login(user.uid));
     store.dispatch(startSetEmployees());
-    store.dispatch(startSetFile());
+    // store.dispatch(startSetFile());
     renderApp();
     if (history.location.pathname === "/") {
       history.push("/");
@@ -58,7 +58,7 @@ firebase.auth().onAuthStateChanged(user => {
   } else {
     store.dispatch(logout());
     store.dispatch(startSetEmployees());
-    store.dispatch(startSetFile());
+    // store.dispatch(startSetFile());
     renderApp();
     history.push("/");
   }

@@ -5,7 +5,6 @@ export const addExcelList = file => ({
   file
 });
 export const startAddExcelList = values => {
-  console.log(values);
   return dispatch => {
     return firebase
       .database()
@@ -18,19 +17,30 @@ export const startAddExcelList = values => {
 };
 
 export const SetFile = list => {
-  console.log(list);
   return {
-    type: "ADD_EXCELLIST",
+    type: "SET_EXCELLIST",
     list
   };
 };
+
+// export const startSetFile = () => {
+//   return dispatch => {
+//     return firebase
+//       .database()
+//       .ref("/admins/emplist")
+//       .on("value", snapshot => {
+//         dispatch(SetFile(snapshot.val()));
+//       });
+//   };
+// };
 
 export const startSetFile = () => {
   return dispatch => {
     return firebase
       .database()
       .ref("/admins/emplist")
-      .on("value", snapshot => {
+      .once("value")
+      .then(snapshot => {
         dispatch(SetFile(snapshot.val()));
       });
   };
